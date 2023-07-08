@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "swiper/css";
 import Image from "next/image";
-import styles from "../../styles/Potfolio.module.css"
 import card1 from "../../../public/portfolio-1.jpg";
 import card2 from "../../../public/portfolio-2.jpg";
 import card3 from "../../../public/portfolio-3.jpg";
@@ -37,10 +36,10 @@ const portfolio = () => {
     <div className="bg-light">
       <Box sx={{ paddingTop: 12 }}>
         <Container>
-          <Typography variant="h2" className={styles.header_text}>
+          <Typography variant="h2" className="header_text">
             LATEST WORKS
           </Typography>
-          <Typography className={styles.parah}>
+          <Typography className="parah">
             A LEAD UX & UI DESIGNER BASED IN CANADA
           </Typography>
         </Container>
@@ -49,80 +48,68 @@ const portfolio = () => {
         <Container>
           <div className="row g-2 ">
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card1} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card1} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card2} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card2} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card3} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card3} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5  position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card4} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card4} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card5} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card5} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mt-5  position-relative">
-              <div className={styles.img_card}>
-                <Image className={styles.card_img} src={card6} />
-                <div className={styles.card_overlay}>
-                  <Typography className={styles.overlay_h5}>
+              <div className="img_card">
+                <Image className="card_img" src={card6} />
+                <div className="card_overlay">
+                  <Typography className="overlay_h5">
                     Our Photography
                   </Typography>
-                  <Typography className={styles.overlay_span}>
-                    Design
-                  </Typography>
+                  <Typography className="overlay_span">Design</Typography>
                 </div>
               </div>
             </div>
@@ -133,10 +120,10 @@ const portfolio = () => {
         sx={{ paddingTop: 10, backgroundColor: "#eaedf2", paddingBottom: 10 }}
       >
         <Container>
-          <Typography variant="h2" className={styles.header_text}>
+          <Typography variant="h2" className="header_text">
             LATEST WORKS
           </Typography>
-          <Typography className={styles.parah}>
+          <Typography className="parah">
             A LEAD UX & UI DESIGNER BASED IN CANADA
           </Typography>
         </Container>
@@ -154,74 +141,66 @@ const portfolio = () => {
             autoPlaySpeed={1000}
             infinite={true}
           >
-            <div className={styles.swiper_card}>
+            <div className="swiper_card">
               <div>
-                <Image src={Team1} className={styles.Swiper_img} />
+                <Image src={Team1} className="Swiper_img" />
               </div>
               <div className="px-3">
-                <Typography variant="subtitle2" className={styles.card_parah}>
+                <Typography variant="subtitle2" className="card_parah">
                   {" "}
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </Typography>
-                <Typography className={styles.Swiper_head}>
-                  Nancy Bayers
-                </Typography>
+                <Typography className="Swiper_head">Nancy Bayers</Typography>
                 <Typography variant="subtitle1" className="text-dark">
                   {" "}
                   Co-founder
                 </Typography>
               </div>
             </div>
-            <div className={styles.swiper_card}>
+            <div className="swiper_card">
               <div>
-                <Image src={Team1} className={styles.Swiper_img} />
+                <Image src={Team1} className="Swiper_img" />
               </div>
               <div className="px-3">
-                <Typography variant="subtitle2" className={styles.card_parah}>
+                <Typography variant="subtitle2" className="card_parah">
                   {" "}
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </Typography>
-                <Typography className={styles.Swiper_head}>
-                  Nancy Bayers
-                </Typography>
+                <Typography className="Swiper_head">Nancy Bayers</Typography>
                 <Typography variant="subtitle1"> Co-founder</Typography>
               </div>
             </div>
-            <div className={styles.swiper_card}>
+            <div className="swiper_card">
               <div>
-                <Image src={Team1} className={styles.Swiper_img} />
+                <Image src={Team1} className="Swiper_img" />
               </div>
               <div className="px-3">
-                <Typography variant="subtitle2" className={styles.card_parah}>
+                <Typography variant="subtitle2" className="card_parah">
                   {" "}
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </Typography>
-                <Typography className={styles.Swiper_head}>
-                  Nancy Bayers
-                </Typography>
+                <Typography className="Swiper_head">Nancy Bayers</Typography>
                 <Typography variant="subtitle1"> Co-founder</Typography>
               </div>
             </div>
-            <div className={styles.swiper_card}>
+            <div className="swiper_card">
               <div>
-                <Image src={Team1} className={styles.Swiper_img} />
+                <Image src={Team1} className="Swiper_img" />
               </div>
               <div className="px-3">
-                <Typography variant="subtitle2" className={styles.card_parah}>
+                <Typography variant="subtitle2" className="card_parah">
                   {" "}
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </Typography>
-                <Typography className={styles.Swiper_head}>
-                  Nancy Bayers
-                </Typography>
+                <Typography className="Swiper_head">Nancy Bayers</Typography>
                 <Typography variant="subtitle1"> Co-founder</Typography>
               </div>
             </div>
