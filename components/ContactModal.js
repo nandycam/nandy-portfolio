@@ -1,7 +1,6 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import styles from "../src/styles/Contact.module.css"
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
     .min(2, "Too Short!")
@@ -15,8 +14,8 @@ const SignupSchema = Yup.object().shape({
 });
 const ContactModal = () => {
   return (
-    <div className={styles.Modal_container}>
-      <h5 className={styles.modal_header}>Signup</h5>
+    <div className="Modal_container">
+      <h5 className="modal_header">Signup</h5>
       <Formik
         initialValues={{
           firstName: "",
@@ -31,15 +30,15 @@ const ContactModal = () => {
         {({ errors, touched }) => (
           <Form>
             <Field
-              className={styles.Modal_input}
+              className="Modal_input"
               placeholder="Name *"
               name="firstName"
             />
             {errors.firstName && touched.firstName ? (
-              <div className={styles.text_para}>{errors.firstName}</div>
+              <div className="text_para">{errors.firstName}</div>
             ) : null}
 
-            <button type="submit" className={styles.My_btn}>
+            <button type="submit" className="My_btn">
               Submit
             </button>
           </Form>
