@@ -6,11 +6,7 @@ import Image from "next/image";
 import logo from "../public/slack.png";
 
 const Navbar = () => {
-  const StyleToolbar = styled(Toolbar)({
-    display: "flex",
-    justifyContent: "space-between",
-    background: "black",
-  });
+
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" className="Navbar_section_full">
+    <AppBar position="static" className="Navbar_section_full ">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
           <Typography className="Navbar_link">
